@@ -153,10 +153,7 @@ width:100%;
 height:100%;
 border-radius:50%;
 object-fit:cover;
-object-position:center;
 border:6px solid #0f172a;
-z-index:1;
-display:block;
 background:#1e293b;
 }
 
@@ -171,7 +168,25 @@ color:#38bdf8;
 text-align:center;
 }
 
-.about-box,
+/* ABOUT SECTION */
+
+.about-box{
+max-width:1100px;
+margin:auto;
+background:rgba(30,41,59,0.85);
+border:1px solid rgba(148,163,184,0.15);
+padding:45px;
+border-radius:22px;
+box-shadow:0 15px 35px rgba(0,0,0,0.35);
+}
+
+.about-box p{
+font-size:17px;
+line-height:1.9;
+color:#e2e8f0;
+margin-bottom:20px;
+}
+
 .contact-box{
 max-width:1000px;
 margin:auto;
@@ -255,37 +270,6 @@ border-top:1px solid rgba(148,163,184,0.12);
 margin-top:40px;
 }
 
-@media (max-width:768px){
-
-nav{
-padding:18px 6%;
-}
-
-.hero,
-section{
-padding-left:6%;
-padding-right:6%;
-}
-
-.hero{
-text-align:center;
-justify-content:center;
-}
-
-.hero-buttons{
-justify-content:center;
-}
-
-.hero-text h1{
-font-size:36px;
-}
-
-nav .nav-links{
-gap:12px;
-}
-
-}
-
 </style>
 </head>
 
@@ -304,7 +288,6 @@ gap:12px;
 <section class="hero">
 
 <div class="hero-text">
-
 <h1>Hi, I'm <span>Mohamed Omar</span></h1>
 
 <p>
@@ -316,7 +299,6 @@ clear insights, dashboards, and useful business decisions.
 <a href="#projects" class="btn btn-primary">View Projects</a>
 <a href="#contact" class="btn btn-secondary">Contact Me</a>
 </div>
-
 </div>
 
 <div class="profile-wrapper">
@@ -332,107 +314,17 @@ clear insights, dashboards, and useful business decisions.
 <div class="about-box">
 
 <p>
-I’m Mohamed Omar, an AI & Data Analysis student with a strong interest in
-data analytics, visualization, and business intelligence.
+I’m Mohamed Omar, an AI & Data Analysis student with a strong interest in data analytics, visualization, and business intelligence. I enjoy working with datasets and transforming raw data into meaningful insights that can help people understand trends and make better decisions.
 </p>
-
-</div>
-
-</section>
-
-<section id="skills">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Excel</div>
-<div class="skill">Power BI</div>
-<div class="skill">Python</div>
-<div class="skill">SQL</div>
-<div class="skill">Data Cleaning</div>
-<div class="skill">Dashboard Design</div>
-<div class="skill">Data Analysis</div>
-<div class="skill">Machine Learning</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Sales Pipeline Dashboard</h3>
 
 <p>
-Interactive Excel dashboard for tracking opportunities,
-pipeline stages, performance, and conversion insights.
+My main focus is building interactive dashboards and data reports using tools such as Excel, Power BI, SQL, and Python. I like exploring data, cleaning it, organizing it, and presenting it in a clear visual format that highlights patterns and performance.
 </p>
-
-<a href="sales-pipeline.xlsx" target="_blank" class="btn btn-primary">
-View Project
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>Coffee Shop Sales Analysis</h3>
 
 <p>
-Excel analysis project exploring sales trends, top products,
-and dashboard-based reporting for coffee shop performance.
+I am continuously learning and improving my skills through practical projects and real datasets, aiming to develop strong analytical thinking and create solutions that turn data into valuable information.
 </p>
-
-<a href="coffee-shop-sales.xlsx" target="_blank" class="btn btn-primary">
-View Project
-</a>
-
-</div>
 
 </div>
 
 </section>
-
-<section id="contact">
-
-<h2 class="section-title">Contact</h2>
-
-<div class="contact-box">
-
-<p style="text-align:center;">
-Interested in working together or checking out more of my work?
-Let’s connect.
-</p>
-
-<div class="contact-links">
-
-<a href="mailto:yourmail@example.com" class="btn btn-primary">
-Email Me
-</a>
-
-<a href="https://www.linkedin.com/" target="_blank" class="btn btn-secondary">
-LinkedIn
-</a>
-
-<a href="https://github.com/" target="_blank" class="btn btn-secondary">
-GitHub
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Mohamed Omar | All Rights Reserved
-</footer>
-
-</body>
-</html>
